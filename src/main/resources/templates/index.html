@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <style>
+        h1 {
+            color: rgba(31, 75, 31, 0.78);
+
+        }
+        body {
+           background-color: rgba(60, 117, 119, 0.7);
+        }
+        a {
+            color: #dade5a;
+            top: 80%;
+        }
+    </style>
+
+</head>
+<body>
+<div>
+    <a th:href="@{/users/}">Перейти к таблице<br> Пользователей</a>
+</div>
+<h1> Приложение<br> от <b>Оксаны</b></h1>
+
+
+</body>
+</html>

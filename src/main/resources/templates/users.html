@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Пользователи</title>
+    <style> table th, table td {
+        padding: 3px 5px;
+        font-size: 20px;
+        border-style: solid;
+        border-width: 1px;
+        background: #bbe3d4;
+        }
+
+    a {
+        color: rgba(36, 66, 36, 0.78);
+        size: 20px;
+    }
+
+    body {
+        background-color: darkturquoise ;
+
+    }
+
+
+    </style>
+</head>
+<body>
+
+<div>
+    <table border="10">
+        <tr>
+            <th>Id</th>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Изменить</th>
+            <th>Данные</th>
+        </tr>
+        <tr th:each ="user : ${users}">
+            <td th:utext="${user.getId()}">...</td>
+            <td th:utext="${user.getName()}">...</td>
+            <td th:utext="${user.getLastName()}">...</td>
+            <td><a th:href="@{/users/update/{id}(id=${user.getId()})}">обновить</a>
+            <a th:href="@{/users/delete/{id}(id=${user.getId()})}">удалить</a></td>
+            <td style="text-align:center"><a th:href="@{/users/{id}(id=${user.getId()})}">...</a>
+        </tr>
+    </table>
+    <p><a href="/users/save">Добавить пользователя</a></p>
+    <p><a href="/">Вернуться на главную страницу</a></p>
+</div>
+</body>
+</html>
