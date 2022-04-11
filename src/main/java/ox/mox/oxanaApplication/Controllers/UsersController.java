@@ -1,20 +1,20 @@
-package ox.mox.oxanaApplication.CONTROLLERS;
+package ox.mox.oxanaApplication.Controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ox.mox.oxanaApplication.MODEL.User;
-import ox.mox.oxanaApplication.BISNESS_LOGIC.UserSERVICE;
+import ox.mox.oxanaApplication.Model.User;
+import ox.mox.oxanaApplication.BisnessLogic.UserService;
 
 @Controller
 @RequestMapping("/users")
-public class UsersCONTROLLER {
+public class UsersController {
 
-    private final UserSERVICE userService;
+    private final UserService userService;
 
     @Autowired
-    public UsersCONTROLLER(UserSERVICE userService) {
+    public UsersController(UserService userService) {
         this.userService = userService;
     }
 
@@ -42,8 +42,8 @@ public class UsersCONTROLLER {
     }
 
     @PatchMapping("/update/{id}")
-    public String update(@ModelAttribute("user") User user, @PathVariable("id") int id) {
-        userService.update(id, user);
+    public String update(@ModelAttribute("user") User user) {
+        userService.update(user);
         return "redirect:/users";
     }
 

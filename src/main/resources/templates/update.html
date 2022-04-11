@@ -5,23 +5,29 @@
     <title>Обновить данные пользователя</title>
 <style>
     body {
-        background-color: chartreuse;
+        background-color: #abd581;
     }
+
 </style>
 </head>
 <body>
 <form th:method="PATCH" th:action="@{/users/update/{id}(id=${user.getId()})}" th:object="${user}">
     <div>
+        <b>
         <label for="name">Имя</label>
         <input type="text" th:field="*{name}"  id="name"/>
-
+        </b>
         <br>
+        <b>
         <label for="lastName">Фамилия</label>
         <input type="text" th:field="*{lastName}" id="lastName"/>
+        </b>
+            <br>
 
-
-        <br>
         <input type="submit" value="Обновить данные пользователя">
+        <br>
+
+        <img src="https://w-dog.ru/wallpapers/12/17/507295083581389/uilyam-t-rner-vid-zamok-dunster-s-severo-vostoka-kartina-pejzazh-gory-dolina-derevya-zamok-korovy.jpg" alt="DuckDeduct" loading="lazy">
     </div>
 </form>
 </body>

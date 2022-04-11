@@ -4,11 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d88c0d2-110f-419d-b9fc-7ab3edbca520" name="Changes" comment="" />
+    <list default="true" id="7d88c0d2-110f-419d-b9fc-7ab3edbca520" name="Changes" comment="-в методе update() использован метод merge();&#10;-удален ServletInitial;&#10;-убран CAPSLOCK;&#10;последнее замечание меня огорчило очень сильно, т. к. я слепой крот с синдромом дефицита внимания!Сapslock для меня как флажки и маечки в &quot;многобукв&quot;.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cf0814b9-0371-41df-818a-21f1a43d0c53.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cf0814b9-0371-41df-818a-21f1a43d0c53.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/BISNESS_LOGIC/UserSERVICE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/BisnessLogic/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/BISNESS_LOGIC/UserSERVICE_IMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/BisnessLogic/UserService_Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/CONTROLLERS/UsersCONTROLLER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/Controllers/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/CONTROLLERS/WelcomeCONTROLLER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/Controllers/WelcomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/MODEL/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/REPOSITORIES/UserPEROSITORY.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/Repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/REPOSITORIES/UserPEROSITORY_IMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/Repositories/UserRepository_Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ox/mox/oxanaApplication/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/save.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/save.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -35,6 +54,7 @@
     </option>
   </component>
   <component name="ProjectId" id="27bVnXUdpNKn7198dn7nWsHRBAn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="mysql-explain.agentPath" value="$APPLICATION_PLUGINS_DIR$/mysql-explain-intellij-plugin/lib/mysql-explain-agent-1.0-jar-with-dependencies.jar" />
     <property name="mysql-explain.existMysqlJar" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -181,11 +201,28 @@
       <updated>1649588943779</updated>
       <workItem from="1649588945651" duration="1946000" />
       <workItem from="1649591003495" duration="11997000" />
-      <workItem from="1649608526578" duration="3987000" />
+      <workItem from="1649608526578" duration="4602000" />
+      <workItem from="1649692362076" duration="215000" />
+      <workItem from="1649699942143" duration="4250000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="-в методе update() использован метод merge();&#10;-удален ServletInitial;&#10;-убран CAPSLOCK;&#10;последнее замечание меня огорчило очень сильно, т. к. я слепой крот с синдромом дефицита внимания!Сapslock для меня как флажки и маечки в &quot;многобукв&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="-в методе update() использован метод merge();&#10;-удален ServletInitial;&#10;-убран CAPSLOCK;&#10;последнее замечание меня огорчило очень сильно, т. к. я слепой крот с синдромом дефицита внимания!Сapslock для меня как флажки и маечки в &quot;многобукв&quot;." />
   </component>
 </project>

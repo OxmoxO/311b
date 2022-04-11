@@ -1,20 +1,20 @@
-package ox.mox.oxanaApplication.REPOSITORIES;
+package ox.mox.oxanaApplication.Repositories;
 
 import org.springframework.stereotype.Repository;
-import ox.mox.oxanaApplication.MODEL.User;
+import ox.mox.oxanaApplication.Model.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
-public class UserPEROSITORY_IMPL implements UserPEROSITORY {
+public class UserRepository_Impl implements UserRepository {
     @PersistenceContext
     private EntityManager entityManager;
 
     @Override
     public List<User> findAll() {
-        return entityManager.createQuery("FROM User", User.class)
+        return entityManager.createQuery("select u from User u", User.class)
                 .getResultList();
     }
 
@@ -35,9 +35,7 @@ public class UserPEROSITORY_IMPL implements UserPEROSITORY {
     }
 
     @Override
-    public void update(long id, User user) {
-        User userToBeUpdated = findById(id);
-        userToBeUpdated.setName(user.getName());
-        userToBeUpdated.setLastName(user.getLastName());
+    public void update(User user) {
+        entityManager.merge(user);
     }
 }

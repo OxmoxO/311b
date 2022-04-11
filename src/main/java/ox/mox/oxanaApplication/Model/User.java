@@ -1,4 +1,4 @@
-package ox.mox.oxanaApplication.MODEL;
+package ox.mox.oxanaApplication.Model;
 
 import javax.persistence.*;
 
